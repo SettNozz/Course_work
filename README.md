@@ -1,9 +1,9 @@
 # Course_work
 
-.Main class - train
-sub classes - passangers, freight trains
+1) Main class - train
+   sub classes - passangers, freight trains
 
-.type of conteiner - stack
+2) type of conteiner - stack
 
-.request to the container - output number of a train, with a maximum number of cars
+3) request to the container - output number of a train, with a maximum number of cars
 
