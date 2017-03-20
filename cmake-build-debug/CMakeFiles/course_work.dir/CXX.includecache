@@ -1,0 +1,72 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/settnozz/CLionProjects/course work/Freight_train.cpp
+Freight_train.h
+/home/settnozz/CLionProjects/course work/Freight_train.h
+
+/home/settnozz/CLionProjects/course work/Freight_train.h
+Train.h
+/home/settnozz/CLionProjects/course work/Train.h
+
+/home/settnozz/CLionProjects/course work/Main_job.cpp
+cstdlib
+-
+iostream
+-
+Main_job.h
+/home/settnozz/CLionProjects/course work/Main_job.h
+Stack.h
+/home/settnozz/CLionProjects/course work/Stack.h
+Train.h
+/home/settnozz/CLionProjects/course work/Train.h
+Passenger_train.h
+/home/settnozz/CLionProjects/course work/Passenger_train.h
+
+/home/settnozz/CLionProjects/course work/Main_job.h
+Stack.h
+/home/settnozz/CLionProjects/course work/Stack.h
+
+/home/settnozz/CLionProjects/course work/Passenger_train.cpp
+Passenger_train.h
+/home/settnozz/CLionProjects/course work/Passenger_train.h
+
+/home/settnozz/CLionProjects/course work/Passenger_train.h
+Train.h
+/home/settnozz/CLionProjects/course work/Train.h
+
+/home/settnozz/CLionProjects/course work/Stack.cpp
+Stack.h
+/home/settnozz/CLionProjects/course work/Stack.h
+Train.h
+/home/settnozz/CLionProjects/course work/Train.h
+
+/home/settnozz/CLionProjects/course work/Stack.h
+string
+-
+Train.h
+/home/settnozz/CLionProjects/course work/Train.h
+
+/home/settnozz/CLionProjects/course work/Train.cpp
+Train.h
+/home/settnozz/CLionProjects/course work/Train.h
+
+/home/settnozz/CLionProjects/course work/Train.h
+string
+-
+
+/home/settnozz/CLionProjects/course work/main.cpp
+iostream
+-
+Train.h
+/home/settnozz/CLionProjects/course work/Train.h
+Main_job.h
+/home/settnozz/CLionProjects/course work/Main_job.h
+Stack.h
+/home/settnozz/CLionProjects/course work/Stack.h
+

@@ -90,10 +90,22 @@
 		<Unit filename="/home/settnozz/CLionProjects/course work/Freight_train.h">
 			<Option target="course_work"/>
 		</Unit>
+		<Unit filename="/home/settnozz/CLionProjects/course work/Main_job.cpp">
+			<Option target="course_work"/>
+		</Unit>
+		<Unit filename="/home/settnozz/CLionProjects/course work/Main_job.h">
+			<Option target="course_work"/>
+		</Unit>
 		<Unit filename="/home/settnozz/CLionProjects/course work/Passenger_train.cpp">
 			<Option target="course_work"/>
 		</Unit>
 		<Unit filename="/home/settnozz/CLionProjects/course work/Passenger_train.h">
+			<Option target="course_work"/>
+		</Unit>
+		<Unit filename="/home/settnozz/CLionProjects/course work/Stack.cpp">
+			<Option target="course_work"/>
+		</Unit>
+		<Unit filename="/home/settnozz/CLionProjects/course work/Stack.h">
 			<Option target="course_work"/>
 		</Unit>
 		<Unit filename="/home/settnozz/CLionProjects/course work/Train.cpp">

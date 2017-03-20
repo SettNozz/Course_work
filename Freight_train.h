@@ -9,7 +9,12 @@
 #include "Train.h"
 
 class Freight_train : public Train {
+protected:
+    string name_of_freight;
+    int weight_of_freight;
 public:
+    Freight_train(string, string, int, int, int, string, int);
+    ~Freight_train();
 
 };
 

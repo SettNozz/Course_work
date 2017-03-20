@@ -15,12 +15,14 @@ class Train {
 protected:
     string name_start_station; //Name of the initial station
     string name_end_station; // Name of endpoint
-    int number_train; // Time in road
-    int number_of_carriages; // Number of a train
-    int time_in_road; // The number of cars
+    int number_train; // The number of train
+    int number_of_carriages; // Number of a car
+    int time_in_road; // Time in road
 public:
+    Train();
     Train(string, string, int, int, int); //constructor
     ~Train(); //destructor
+
 };
 
 

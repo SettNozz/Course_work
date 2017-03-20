@@ -15,3 +15,7 @@ Train::Train(string name_st, string name_e, int time, int num_train, int num_car
 
 Train::~Train() { }
 
+Train::Train() {
+
+}
+
