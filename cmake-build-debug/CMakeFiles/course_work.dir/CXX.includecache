@@ -7,6 +7,10 @@
 #IncludeRegexTransform: 
 
 /home/settnozz/CLionProjects/course work/Freight_train.cpp
+iostream
+-
+limits
+-
 Freight_train.h
 /home/settnozz/CLionProjects/course work/Freight_train.h
 
@@ -21,38 +25,48 @@ iostream
 -
 Main_job.h
 /home/settnozz/CLionProjects/course work/Main_job.h
-Stack.h
-/home/settnozz/CLionProjects/course work/Stack.h
+New_stack.h
+/home/settnozz/CLionProjects/course work/New_stack.h
 Train.h
 /home/settnozz/CLionProjects/course work/Train.h
 Passenger_train.h
 /home/settnozz/CLionProjects/course work/Passenger_train.h
+Freight_train.h
+/home/settnozz/CLionProjects/course work/Freight_train.h
+New_stack.h
+/home/settnozz/CLionProjects/course work/New_stack.h
 
 /home/settnozz/CLionProjects/course work/Main_job.h
-Stack.h
-/home/settnozz/CLionProjects/course work/Stack.h
+New_stack.h
+/home/settnozz/CLionProjects/course work/New_stack.h
+
+/home/settnozz/CLionProjects/course work/New_stack.cpp
+New_stack.h
+/home/settnozz/CLionProjects/course work/New_stack.h
+iostream
+-
+
+/home/settnozz/CLionProjects/course work/New_stack.h
+Train.h
+/home/settnozz/CLionProjects/course work/Train.h
 
 /home/settnozz/CLionProjects/course work/Passenger_train.cpp
+iostream
+-
+limits
+-
 Passenger_train.h
 /home/settnozz/CLionProjects/course work/Passenger_train.h
 
 /home/settnozz/CLionProjects/course work/Passenger_train.h
-Train.h
-/home/settnozz/CLionProjects/course work/Train.h
-
-/home/settnozz/CLionProjects/course work/Stack.cpp
-Stack.h
-/home/settnozz/CLionProjects/course work/Stack.h
-Train.h
-/home/settnozz/CLionProjects/course work/Train.h
-
-/home/settnozz/CLionProjects/course work/Stack.h
-string
--
 Train.h
 /home/settnozz/CLionProjects/course work/Train.h
 
 /home/settnozz/CLionProjects/course work/Train.cpp
+iostream
+-
+limits
+-
 Train.h
 /home/settnozz/CLionProjects/course work/Train.h
 
@@ -67,6 +81,6 @@ Train.h
 /home/settnozz/CLionProjects/course work/Train.h
 Main_job.h
 /home/settnozz/CLionProjects/course work/Main_job.h
-Stack.h
-/home/settnozz/CLionProjects/course work/Stack.h
+New_stack.h
+/home/settnozz/CLionProjects/course work/New_stack.h
 

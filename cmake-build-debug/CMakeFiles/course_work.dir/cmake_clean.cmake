@@ -4,7 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/course_work.dir/Passenger_train.cpp.o"
   "CMakeFiles/course_work.dir/Freight_train.cpp.o"
   "CMakeFiles/course_work.dir/Main_job.cpp.o"
-  "CMakeFiles/course_work.dir/Stack.cpp.o"
+  "CMakeFiles/course_work.dir/New_stack.cpp.o"
   "course_work.pdb"
   "course_work"
 )

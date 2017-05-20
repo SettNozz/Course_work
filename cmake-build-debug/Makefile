@@ -177,6 +177,33 @@ Main_job.cpp.s:
 	$(MAKE) -f CMakeFiles/course_work.dir/build.make CMakeFiles/course_work.dir/Main_job.cpp.s
 .PHONY : Main_job.cpp.s
 
+New_stack.o: New_stack.cpp.o
+
+.PHONY : New_stack.o
+
+# target to build an object file
+New_stack.cpp.o:
+	$(MAKE) -f CMakeFiles/course_work.dir/build.make CMakeFiles/course_work.dir/New_stack.cpp.o
+.PHONY : New_stack.cpp.o
+
+New_stack.i: New_stack.cpp.i
+
+.PHONY : New_stack.i
+
+# target to preprocess a source file
+New_stack.cpp.i:
+	$(MAKE) -f CMakeFiles/course_work.dir/build.make CMakeFiles/course_work.dir/New_stack.cpp.i
+.PHONY : New_stack.cpp.i
+
+New_stack.s: New_stack.cpp.s
+
+.PHONY : New_stack.s
+
+# target to generate assembly for a file
+New_stack.cpp.s:
+	$(MAKE) -f CMakeFiles/course_work.dir/build.make CMakeFiles/course_work.dir/New_stack.cpp.s
+.PHONY : New_stack.cpp.s
+
 Passenger_train.o: Passenger_train.cpp.o
 
 .PHONY : Passenger_train.o
@@ -203,33 +230,6 @@ Passenger_train.s: Passenger_train.cpp.s
 Passenger_train.cpp.s:
 	$(MAKE) -f CMakeFiles/course_work.dir/build.make CMakeFiles/course_work.dir/Passenger_train.cpp.s
 .PHONY : Passenger_train.cpp.s
-
-Stack.o: Stack.cpp.o
-
-.PHONY : Stack.o
-
-# target to build an object file
-Stack.cpp.o:
-	$(MAKE) -f CMakeFiles/course_work.dir/build.make CMakeFiles/course_work.dir/Stack.cpp.o
-.PHONY : Stack.cpp.o
-
-Stack.i: Stack.cpp.i
-
-.PHONY : Stack.i
-
-# target to preprocess a source file
-Stack.cpp.i:
-	$(MAKE) -f CMakeFiles/course_work.dir/build.make CMakeFiles/course_work.dir/Stack.cpp.i
-.PHONY : Stack.cpp.i
-
-Stack.s: Stack.cpp.s
-
-.PHONY : Stack.s
-
-# target to generate assembly for a file
-Stack.cpp.s:
-	$(MAKE) -f CMakeFiles/course_work.dir/build.make CMakeFiles/course_work.dir/Stack.cpp.s
-.PHONY : Stack.cpp.s
 
 Train.o: Train.cpp.o
 
@@ -300,12 +300,12 @@ help:
 	@echo "... Main_job.o"
 	@echo "... Main_job.i"
 	@echo "... Main_job.s"
+	@echo "... New_stack.o"
+	@echo "... New_stack.i"
+	@echo "... New_stack.s"
 	@echo "... Passenger_train.o"
 	@echo "... Passenger_train.i"
 	@echo "... Passenger_train.s"
-	@echo "... Stack.o"
-	@echo "... Stack.i"
-	@echo "... Stack.s"
 	@echo "... Train.o"
 	@echo "... Train.i"
 	@echo "... Train.s"

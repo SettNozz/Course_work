@@ -5,9 +5,11 @@
 #include <cstdlib>
 #include <iostream>
 #include "Main_job.h"
-#include "Stack.h"
+#include "New_stack.h"
 #include "Train.h"
 #include "Passenger_train.h"
+#include "Freight_train.h"
+#include "New_stack.h"
 
 Main_job::Main_job() {
 
@@ -17,18 +19,28 @@ Main_job::~Main_job() {
 
 }
 
+void init_fields(Train* item, New_stack &q){
+        item->set_start_station();
+        item->set_end_station();
+        item->set_time_in_road();
+        item->set_number_train();
+        item->set_count_of_carriages();
+        q.push(item);
+}
+
 void Main_job::Run()
 {
     int i;
+    New_stack &w = New_stack::lego();
     char s[10];
     do
     {
-        system("CLS");
+        system("clear");
         std::cout <<"--------------------MENU--------------------" << std::endl;
         std::cout << "<1>. Create passengers train objects" << std::endl;
         std::cout << "<2>. Create freights train objects" << std::endl;
-        std::cout << "<3>. Show the ..." << std::endl;
-        std::cout << "<4>. Remove the ..." << std::endl;
+        std::cout << "<3>. Show the pop stack" << std::endl;
+        std::cout << "<4>. Remove the head stack" << std::endl;
         std::cout << "<5>. Save to file" << std::endl;
         std::cout << "<6>. Load from the file" << std::endl;
         std::cout << "<7>. Sort objects" << std::endl;
@@ -41,99 +53,109 @@ void Main_job::Run()
         {
             case 1:
             {
-                system("CLS");
-                create_passenger();
-                system("PAUSE");
+                system("clear");
+                create_passenger(w);
+                std::cout << "Press enter to continue ...";
+                std::cin.get();
                 break;
             }
             case 2:
             {
-                system("CLS");
-                create_freight();
-                system("PAUSE");
+                system("clear");
+                create_freight(w);
+                std::cout << "Press enter to continue ...";
+                std::cin.get();
                 break;
             }
             case 3:
             {
-                system("CLS");
-                show_some();
-                system("PAUSE");
+                system("clear");
+                show_some(w);
+                std::cout << "Press enter to continue ...";
+                std::cin.get();
                 break;
             }
             case 4:
             {
-                system("CLS");
-                remove_some();
-                system("PAUSE");
+                system("clear");
+                remove_some(w);
+                std::cout << "Press enter to continue ...";
+                std::cin.get();
                 break;
             }
             case 5:
             {
-                system("CLS");
-                save_file();
-                system("PAUSE");
+                system("clear");
+                //save_file();
+                std::cout << "Press enter to continue ...";
+                std::cin.get();
                 break;
             }
             case 6:
             {
-                system("CLS");
-                load_from_file();
-                system("PAUSE");
+                system("clear");
+                //load_from_file();
+                std::cout << "Press enter to continue ...";
+                std::cin.get();
                 break;
             }
             case 7:
             {
-                system("CLS");
-                sort_objects();
-                system("PAUSE");
+                system("clear");
+                sort_objects(w);
+                std::cout << "Press enter to continue ...";
+                std::cin.get();
                 break;
             }
             case 8:
             {
-                system("CLS");
-                do_request();
-                system("PAUSE");
+                system("clear");
+                do_request(w);
+                std::cout << "Press enter to continue ...";
+                std::cin.get();
                 break;
             }
             case 9:
             {
-                system("CLS");
-                leave_program();
-                system("PAUSE");
+                system("clear");
+                //leave_program();
+                std::cout << "Press enter to continue ...";
+                std::cin.get();
                 break;
             }
         }
     }
-    while (i !=10);
+    while (i !=9);
 }
 
-void Main_job::create_passenger()
+void Main_job::create_passenger(New_stack &s)
 {
-    Train* t;
-    string name_start_st = "Kiev";
-    string name_end_st = "Zaporizhya";
-    int num_train = 72;
-    int num_carriges = 10;
-    int time_road = 12;
-    int num_of_peoples = 100;
-    int num_of_plases = 140;
-    t = new Passenger_train(name_start_st, name_end_st, num_train, num_carriges, time_road, num_of_peoples, num_of_plases);
-    st.push(t);
+    Train *t = new Passenger_train();
+    init_fields(t, s);
+    std::cout << "Object is created now!" << std::endl;
 }
 
 
-void Main_job::create_freight() {}
+void Main_job::create_freight(New_stack &s)
+{
+    Train *m = new Freight_train();
+    init_fields(m, s);
+    std::cout << "Object is created now!" << std::endl;
+}
 
-void Main_job::show_some() {}
+void Main_job::show_some(New_stack &s) {
+    s.print_stack();
+}
 
-void Main_job::remove_some() {}
+void Main_job::remove_some(New_stack &s) {
 
-void Main_job::save_file() {}
+}
 
-void Main_job::load_from_file() {}
 
-void Main_job::sort_objects() {}
+void Main_job::sort_objects(New_stack &s) {
+    std::cout << "There must be sort_objects_function" << std::endl;
+}
 
-void Main_job::do_request() {}
-
-void Main_job::leave_program() {}
+void Main_job::do_request(New_stack &s) {
+    std::cout << "There must be do_request_func" << std::endl;
+}

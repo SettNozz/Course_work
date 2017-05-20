@@ -1,7 +1,7 @@
 #ifndef COURSE_WORK_MAIN_JOB_H
 #define COURSE_WORK_MAIN_JOB_H
 
-#include "Stack.h"
+#include "New_stack.h"
 
 class Main_job {
 public:
@@ -9,17 +9,14 @@ public:
     ~Main_job();
 
 
-    Stack st;
     void Run();
-    void create_passenger();
-    void create_freight();
-    void show_some();
-    void remove_some();
-    void save_file();
-    void load_from_file();
-    void sort_objects();
-    void do_request();
-    void leave_program();
+    void create_passenger(New_stack &);
+    void create_freight(New_stack &);
+    void show_some(New_stack &);
+    void remove_some(New_stack &);
+    void sort_objects(New_stack &);
+    void do_request(New_stack &);
+    //void leave_program();
 
 };
 

@@ -177,28 +177,28 @@ CMakeFiles/course_work.dir/Main_job.cpp.o.provides: CMakeFiles/course_work.dir/M
 CMakeFiles/course_work.dir/Main_job.cpp.o.provides.build: CMakeFiles/course_work.dir/Main_job.cpp.o
 
 
-CMakeFiles/course_work.dir/Stack.cpp.o: CMakeFiles/course_work.dir/flags.make
-CMakeFiles/course_work.dir/Stack.cpp.o: ../Stack.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/settnozz/CLionProjects/course work/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/course_work.dir/Stack.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/course_work.dir/Stack.cpp.o -c "/home/settnozz/CLionProjects/course work/Stack.cpp"
+CMakeFiles/course_work.dir/New_stack.cpp.o: CMakeFiles/course_work.dir/flags.make
+CMakeFiles/course_work.dir/New_stack.cpp.o: ../New_stack.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/settnozz/CLionProjects/course work/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/course_work.dir/New_stack.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/course_work.dir/New_stack.cpp.o -c "/home/settnozz/CLionProjects/course work/New_stack.cpp"
 
-CMakeFiles/course_work.dir/Stack.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/course_work.dir/Stack.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/settnozz/CLionProjects/course work/Stack.cpp" > CMakeFiles/course_work.dir/Stack.cpp.i
+CMakeFiles/course_work.dir/New_stack.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/course_work.dir/New_stack.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/settnozz/CLionProjects/course work/New_stack.cpp" > CMakeFiles/course_work.dir/New_stack.cpp.i
 
-CMakeFiles/course_work.dir/Stack.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/course_work.dir/Stack.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/settnozz/CLionProjects/course work/Stack.cpp" -o CMakeFiles/course_work.dir/Stack.cpp.s
+CMakeFiles/course_work.dir/New_stack.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/course_work.dir/New_stack.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/settnozz/CLionProjects/course work/New_stack.cpp" -o CMakeFiles/course_work.dir/New_stack.cpp.s
 
-CMakeFiles/course_work.dir/Stack.cpp.o.requires:
+CMakeFiles/course_work.dir/New_stack.cpp.o.requires:
 
-.PHONY : CMakeFiles/course_work.dir/Stack.cpp.o.requires
+.PHONY : CMakeFiles/course_work.dir/New_stack.cpp.o.requires
 
-CMakeFiles/course_work.dir/Stack.cpp.o.provides: CMakeFiles/course_work.dir/Stack.cpp.o.requires
-	$(MAKE) -f CMakeFiles/course_work.dir/build.make CMakeFiles/course_work.dir/Stack.cpp.o.provides.build
-.PHONY : CMakeFiles/course_work.dir/Stack.cpp.o.provides
+CMakeFiles/course_work.dir/New_stack.cpp.o.provides: CMakeFiles/course_work.dir/New_stack.cpp.o.requires
+	$(MAKE) -f CMakeFiles/course_work.dir/build.make CMakeFiles/course_work.dir/New_stack.cpp.o.provides.build
+.PHONY : CMakeFiles/course_work.dir/New_stack.cpp.o.provides
 
-CMakeFiles/course_work.dir/Stack.cpp.o.provides.build: CMakeFiles/course_work.dir/Stack.cpp.o
+CMakeFiles/course_work.dir/New_stack.cpp.o.provides.build: CMakeFiles/course_work.dir/New_stack.cpp.o
 
 
 # Object files for target course_work
@@ -208,7 +208,7 @@ course_work_OBJECTS = \
 "CMakeFiles/course_work.dir/Passenger_train.cpp.o" \
 "CMakeFiles/course_work.dir/Freight_train.cpp.o" \
 "CMakeFiles/course_work.dir/Main_job.cpp.o" \
-"CMakeFiles/course_work.dir/Stack.cpp.o"
+"CMakeFiles/course_work.dir/New_stack.cpp.o"
 
 # External object files for target course_work
 course_work_EXTERNAL_OBJECTS =
@@ -218,7 +218,7 @@ course_work: CMakeFiles/course_work.dir/Train.cpp.o
 course_work: CMakeFiles/course_work.dir/Passenger_train.cpp.o
 course_work: CMakeFiles/course_work.dir/Freight_train.cpp.o
 course_work: CMakeFiles/course_work.dir/Main_job.cpp.o
-course_work: CMakeFiles/course_work.dir/Stack.cpp.o
+course_work: CMakeFiles/course_work.dir/New_stack.cpp.o
 course_work: CMakeFiles/course_work.dir/build.make
 course_work: CMakeFiles/course_work.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/settnozz/CLionProjects/course work/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable course_work"
@@ -234,7 +234,7 @@ CMakeFiles/course_work.dir/requires: CMakeFiles/course_work.dir/Train.cpp.o.requ
 CMakeFiles/course_work.dir/requires: CMakeFiles/course_work.dir/Passenger_train.cpp.o.requires
 CMakeFiles/course_work.dir/requires: CMakeFiles/course_work.dir/Freight_train.cpp.o.requires
 CMakeFiles/course_work.dir/requires: CMakeFiles/course_work.dir/Main_job.cpp.o.requires
-CMakeFiles/course_work.dir/requires: CMakeFiles/course_work.dir/Stack.cpp.o.requires
+CMakeFiles/course_work.dir/requires: CMakeFiles/course_work.dir/New_stack.cpp.o.requires
 
 .PHONY : CMakeFiles/course_work.dir/requires
 

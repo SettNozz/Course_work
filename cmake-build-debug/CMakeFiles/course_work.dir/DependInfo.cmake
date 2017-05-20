@@ -6,8 +6,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/settnozz/CLionProjects/course work/Freight_train.cpp" "/home/settnozz/CLionProjects/course work/cmake-build-debug/CMakeFiles/course_work.dir/Freight_train.cpp.o"
   "/home/settnozz/CLionProjects/course work/Main_job.cpp" "/home/settnozz/CLionProjects/course work/cmake-build-debug/CMakeFiles/course_work.dir/Main_job.cpp.o"
+  "/home/settnozz/CLionProjects/course work/New_stack.cpp" "/home/settnozz/CLionProjects/course work/cmake-build-debug/CMakeFiles/course_work.dir/New_stack.cpp.o"
   "/home/settnozz/CLionProjects/course work/Passenger_train.cpp" "/home/settnozz/CLionProjects/course work/cmake-build-debug/CMakeFiles/course_work.dir/Passenger_train.cpp.o"
-  "/home/settnozz/CLionProjects/course work/Stack.cpp" "/home/settnozz/CLionProjects/course work/cmake-build-debug/CMakeFiles/course_work.dir/Stack.cpp.o"
   "/home/settnozz/CLionProjects/course work/Train.cpp" "/home/settnozz/CLionProjects/course work/cmake-build-debug/CMakeFiles/course_work.dir/Train.cpp.o"
   "/home/settnozz/CLionProjects/course work/main.cpp" "/home/settnozz/CLionProjects/course work/cmake-build-debug/CMakeFiles/course_work.dir/main.cpp.o"
   )

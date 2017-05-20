@@ -10,12 +10,16 @@
 
 class Passenger_train : public Train
 {
-protected:
+private:
     int number_of_passangers;
     int number_of_plases;
 public:
-    Passenger_train(string, string, int, int, int, int, int);
+    Passenger_train();
+    Passenger_train(road, int, int, int, int, int);
     ~Passenger_train();
+    void set_number_of_passangers();
+    void set_number_of_plases();
+    void show() const;
 };
 
 
