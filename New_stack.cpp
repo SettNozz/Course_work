@@ -80,6 +80,10 @@ void New_stack::read_from_file() {
 //    fout.close();
 }
 
+void New_stack::write_to_file() const{
+    //write file func
+}
+
 void New_stack::clear_stack() {
     while (!is_empty()){
         Train* t = ptop_->item_;
@@ -95,14 +99,17 @@ void New_stack::sort_stack() {
 }
 
 void New_stack::request_stack() {
+    auto max = 0;
+    auto num_tr = 0;
     while (!is_empty()){
-        auto max = 0;
         Train* t = ptop_->item_;
         stack_node *pretop = ptop_;
         ptop_ = ptop_->pnext_;
         if (t->get_count_of_carriages() > max){
-            std::cout << "Number of train is: " << t->get_number_train() << std::endl;
+            max = t->get_count_of_carriages();
+            num_tr = t->get_number_train();
         }
     }
+    std::cout << "Number of train is: " << num_tr << std::endl;
 
 }

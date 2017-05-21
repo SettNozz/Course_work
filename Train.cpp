@@ -53,7 +53,7 @@ void Train::set_count_of_carriages() {
 }
 
 void Train::set_time_in_road() {
-    std::cout << "Time in road: ";
+    std::cout << "Time in road (hours): ";
     std::cin >> time_in_road;
     while (std::cin.fail() || time_in_road == 0) {
         std::cin.clear();

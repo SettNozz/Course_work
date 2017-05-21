@@ -22,9 +22,11 @@ public:
     Train();    //default constructor
     Train(road, int, int, int);    //constructor
     ~Train();   //destructor
+
     //getters
     virtual int get_number_train();
     virtual int get_count_of_carriages();
+
     //setters
     virtual void set_start_station();
     virtual void set_end_station();
