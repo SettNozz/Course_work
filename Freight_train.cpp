@@ -1,10 +1,7 @@
-//
-// Created by settnozz on 19.03.17.
-//
-
 #include <iostream>
 #include <limits>
 #include "Freight_train.h"
+
 
 Freight_train::Freight_train(){
 
@@ -14,7 +11,13 @@ Freight_train::~Freight_train(){
 
 }
 
-Freight_train::Freight_train(road name_s, int num_tr, int num_car, int time, string name_fr, int weight_fr) {
+void Freight_train::set_count_of_carriages(){
+    Train::set_count_of_carriages();
+    set_name_of_freight();
+    set_weight_of_freight();
+}
+
+Freight_train::Freight_train(road name_s, int num_tr, int num_car, int time, std::string name_fr, int weight_fr) {
     name_of_station.name_start_station = name_s.name_start_station;
     name_of_station.name_end_station = name_s.name_end_station;
     time_in_road = time;
@@ -37,18 +40,19 @@ void Freight_train::show() const{
 void Freight_train::set_name_of_freight() {
     while (true)
     {
-        cout << "Name of freight is: ";
-        getline(cin, name_of_freight, '\n');
+        std::cin.ignore();
+        std::cout << "Name of freight is: ";
+        getline(std::cin, name_of_freight, '\n');
         try
         {
-            if (cin.fail() || name_of_freight == "")
+            if (std::cin.fail() || name_of_freight == "")
             {
                 throw "error";
             }
         }
-        catch (char * error)
+        catch (char const* error)
         {
-            cout << "Your input data is incorrect, try again" << endl;
+            std::cout << "Your input data is incorrect, try again" << std::endl;
             continue;
         }
         break;

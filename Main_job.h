@@ -16,7 +16,6 @@ public:
     void remove_some(New_stack &);
     void sort_objects(New_stack &);
     void do_request(New_stack &);
-    //void leave_program();
 
 };
 

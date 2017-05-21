@@ -1,9 +1,7 @@
-//
-// Created by settnozz on 20.05.17.
-//
-
 #include "New_stack.h"
 #include <iostream>
+#include <fstream>
+
 
 New_stack::New_stack():ptop_(NULL){
 
@@ -66,22 +64,45 @@ void New_stack::print_stack(){
         Train* t = ptop_->item_;
         stack_node *pretop = ptop_;
         ptop_ = ptop_->pnext_;
-        std::cout << t << std::endl;
+        t->show();
+        std::cout << "**************************************************" << std::endl;
     }
 }
 
 void New_stack::read_from_file() {
-
+//    ofstream fout("file.txt");
+//    while (!is_empty()){
+//        Train* t = ptop_->item_;
+//        stack_node *pretop = ptop_;
+//        ptop_ = ptop_->pnext_;
+//        fout << t;
+//    }
+//    fout.close();
 }
 
-void New_stack::write_to_file() const {
-
+void New_stack::clear_stack() {
+    while (!is_empty()){
+        Train* t = ptop_->item_;
+        stack_node *pretop = ptop_;
+        ptop_ = ptop_->pnext_;
+        }
 }
 
 void New_stack::sort_stack() {
-
+//    for(int i = 0; i < len_stack(); ++i){
+//        spam =
+//    }
 }
 
 void New_stack::request_stack() {
+    while (!is_empty()){
+        auto max = 0;
+        Train* t = ptop_->item_;
+        stack_node *pretop = ptop_;
+        ptop_ = ptop_->pnext_;
+        if (t->get_count_of_carriages() > max){
+            std::cout << "Number of train is: " << t->get_number_train() << std::endl;
+        }
+    }
 
 }

@@ -1,15 +1,8 @@
-//
-// Created by settnozz on 20.03.17.
-//
-
 #include <cstdlib>
 #include <iostream>
 #include "Main_job.h"
-#include "New_stack.h"
-#include "Train.h"
 #include "Passenger_train.h"
 #include "Freight_train.h"
-#include "New_stack.h"
 
 Main_job::Main_job() {
 
@@ -39,8 +32,8 @@ void Main_job::Run()
         std::cout <<"--------------------MENU--------------------" << std::endl;
         std::cout << "<1>. Create passengers train objects" << std::endl;
         std::cout << "<2>. Create freights train objects" << std::endl;
-        std::cout << "<3>. Show the pop stack" << std::endl;
-        std::cout << "<4>. Remove the head stack" << std::endl;
+        std::cout << "<3>. Show the stack" << std::endl;
+        std::cout << "<4>. Remove the stack" << std::endl;
         std::cout << "<5>. Save to file" << std::endl;
         std::cout << "<6>. Load from the file" << std::endl;
         std::cout << "<7>. Sort objects" << std::endl;
@@ -118,7 +111,6 @@ void Main_job::Run()
             case 9:
             {
                 system("clear");
-                //leave_program();
                 std::cout << "Press enter to continue ...";
                 std::cin.get();
                 break;
@@ -144,18 +136,23 @@ void Main_job::create_freight(New_stack &s)
 }
 
 void Main_job::show_some(New_stack &s) {
+    std::cout << "This function will show all the elements of the stack." << std::endl;
     s.print_stack();
 }
 
 void Main_job::remove_some(New_stack &s) {
+    std::cout << "This function will completely clean your stack." << std::endl;
+    s.clear_stack();
 
 }
 
 
 void Main_job::sort_objects(New_stack &s) {
-    std::cout << "There must be sort_objects_function" << std::endl;
+    std::cout << "Sorting function." << std::endl;
+    s.sort_stack();
 }
 
 void Main_job::do_request(New_stack &s) {
-    std::cout << "There must be do_request_func" << std::endl;
+    std::cout << "Request to collection: Output the number of the train with the maximum number of wagons." << std::endl;
+    s.request_stack();
 }

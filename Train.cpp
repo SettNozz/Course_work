@@ -11,7 +11,9 @@ Train::Train(road name_s, int time, int num_train, int num_cars)
     count_of_carriages = num_cars;
 }
 
-Train::~Train() { }
+Train::~Train() {
+
+}
 
 Train::Train() {
 
@@ -64,19 +66,19 @@ void Train::set_time_in_road() {
 void Train::set_start_station() {
     while (true)
     {
-        cout << "Name of statr station: ";
-        getline(cin, name_of_station.name_start_station, '\n');
+        std::cout << "Name of statr station: ";
+        getline(std::cin, name_of_station.name_start_station, '\n');
         // check input
         try
         {
-            if (cin.fail() || name_of_station.name_start_station == "")
+            if (std::cin.fail() || name_of_station.name_start_station == "")
             {
                 throw "error";
             }
         }
         catch (char * error)
         {
-            cout << "Your input data is incorrect, try again" << endl;
+            std::cout << "Your input data is incorrect, try again" << std::endl;
             continue;
         }
         break;
@@ -86,20 +88,36 @@ void Train::set_start_station() {
 void Train::set_end_station() {
     while (true)
     {
-        cout << "Name of end station: ";
+        std::cout << "Name of end station: ";
         getline(cin, name_of_station.name_end_station, '\n');
         try
         {
-            if (cin.fail() || name_of_station.name_end_station == "")
+            if (std::cin.fail() || name_of_station.name_end_station == "")
             {
                 throw "error";
             }
         }
         catch (char * error)
         {
-            cout << "Your input data is incorrect, try again" << endl;
+            std::cout << "Your input data is incorrect, try again" << std::endl;
             continue;
         }
         break;
     }
 }
+
+int Train::get_number_train() {return number_train;}
+
+int Train::get_count_of_carriages() { return count_of_carriages;}
+
+//ostream & operator<<(ostream & out, Train * & tr)
+//{
+//    *tr << out;
+//    return out;
+//}
+//
+//istream & operator>>(istream & in, Train *& tr)
+//{
+//    *tr >> in;
+//    return in;
+//}

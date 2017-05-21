@@ -1,7 +1,3 @@
-//
-// Created by settnozz on 20.05.17.
-//
-
 #ifndef COURSE_WORK_NEW_STACK_H
 #define COURSE_WORK_NEW_STACK_H
 
@@ -30,7 +26,8 @@ public:
     }
     ~New_stack();
     bool is_empty();
-    void push(Train *& item);
+    void push( Train *& item);
+    void clear_stack();
     int len_stack();
     Train* pop();
     Train* peek();

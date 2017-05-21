@@ -1,7 +1,3 @@
-//
-// Created by settnozz on 19.03.17.
-//
-
 #include <iostream>
 #include <limits>
 #include "Passenger_train.h"
@@ -9,6 +5,12 @@
 
 Passenger_train::Passenger_train(){
 
+}
+
+void Passenger_train::set_count_of_carriages(){
+    Train::set_count_of_carriages();
+    set_number_of_plases();
+    set_number_of_passangers();
 }
 
 Passenger_train::Passenger_train(road name_s, int num_tr, int num_car, int time, int num_pas, int num_pl) {
