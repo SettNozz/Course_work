@@ -1,5 +1,3 @@
-#include <cstdlib>
-#include <iostream>
 #include "Main_job.h"
 #include "Passenger_train.h"
 #include "Freight_train.h"

@@ -9,15 +9,15 @@ public:
     ~Main_job();
 
 
-    void Run();
-    void create_passenger(New_stack &);
-    void create_freight(New_stack &);
-    void show_some(New_stack &);
-    void remove_some(New_stack &);
-    void write_to_files(New_stack &);
-    void read_from_files(New_stack &);
-    void sort_objects(New_stack &);
-    void do_request(New_stack &);
+    void Run(); //start user menu
+    void create_passenger(New_stack &); //create passenger train object
+    void create_freight(New_stack &); //create freight train object
+    void show_some(New_stack &); //show stack
+    void remove_some(New_stack &); //clear stack
+    void write_to_files(New_stack &); //write stack objects to file
+    void read_from_files(New_stack &); //fill the stack from file objects
+    void sort_objects(New_stack &); //sort stack (bubble sort)
+    void do_request(New_stack &); //request for stack
 
 };
 

@@ -1,4 +1,3 @@
-#include <iostream>
 #include <limits>
 #include "Passenger_train.h"
 

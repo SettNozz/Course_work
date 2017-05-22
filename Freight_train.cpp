@@ -1,4 +1,3 @@
-#include <iostream>
 #include <limits>
 #include "Freight_train.h"
 
@@ -87,7 +86,8 @@ ostream & Freight_train::operator<<(ostream & out) // new method for saving
 istream & Freight_train::operator>>(istream & in)
 {
     this->Train::operator>>(in);
-    getline(in, name_of_freight);
+    std::getline(in, name_of_freight);
     in >> weight_of_freight;
     return in;
 }
+

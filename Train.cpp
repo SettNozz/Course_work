@@ -1,4 +1,3 @@
-#include <iostream>
 #include <limits>
 #include "Train.h"
 
@@ -128,8 +127,8 @@ ostream& Train::operator<<(ostream &out) {
 
 istream & Train::operator>>(istream & in)
 {
-    getline(in, name_of_station.name_start_station);
-    getline(in, name_of_station.name_end_station);
+    std::getline(in, name_of_station.name_start_station);
+    std::getline(in, name_of_station.name_end_station);
     in >> time_in_road;
     in >> number_train;
     in >> count_of_carriages;

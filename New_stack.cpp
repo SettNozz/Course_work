@@ -1,10 +1,6 @@
 #include "New_stack.h"
 #include "Passenger_train.h"
 #include "Freight_train.h"
-#include <iostream>
-#include <fstream>
-
-using namespace std;
 
 New_stack::New_stack():ptop_(NULL){
 
@@ -66,11 +62,6 @@ int New_stack::len_stack() const{
         }
         return count;
     }
-//    if(!is_empty()){
-//        std::cout <<len << std::endl;
-//        return len;
-//    } else
-//        return NULL;
 }
 
 void New_stack::print_stack(){
@@ -110,7 +101,6 @@ void New_stack::read_from_file() {
     }
     else
     {
-        cout << "File isn`t exist, information will be saved:)" << endl;
         write_to_file();
     }
 
