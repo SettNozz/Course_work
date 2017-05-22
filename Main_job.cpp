@@ -140,8 +140,10 @@ void Main_job::show_some(New_stack &s) {
 
 void Main_job::remove_some(New_stack &s) {
     std::cout << "This function will completely clean your stack." << std::endl;
-    s.clear_stack();
-
+    int len = s.len_stack();
+    for(int i = 0; i < len ; ++i){
+        s.pop();
+    }
 }
 
 
