@@ -14,6 +14,8 @@ public:
     void create_freight(New_stack &);
     void show_some(New_stack &);
     void remove_some(New_stack &);
+    void write_to_files(New_stack &);
+    void read_from_files(New_stack &);
     void sort_objects(New_stack &);
     void do_request(New_stack &);
 

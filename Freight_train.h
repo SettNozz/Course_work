@@ -14,10 +14,17 @@ public:
     Freight_train();
     Freight_train(road, int, int, int, std::string, int);
     ~Freight_train();
+
     void set_count_of_carriages();
     void set_name_of_freight();
     void set_weight_of_freight();
+
+    std::string get_name_of_freight();
+    int get_weight_of_freight();
+
     void show() const;
+    ostream& operator<<(ostream& out);
+    istream& operator>>(istream& in);
 
 };
 

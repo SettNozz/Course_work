@@ -110,6 +110,34 @@ int Train::get_number_train() {return number_train;}
 
 int Train::get_count_of_carriages() { return count_of_carriages;}
 
+int Train::get_time_in_road() { return time_in_road;}
+
+std::string Train::get_start_station() { return name_of_station.name_start_station;};
+
+std::string Train::get_end_station() { return name_of_station.name_end_station;};
+
+ostream& Train::operator<<(ostream &out) {
+    out << name_of_station.name_start_station << std::endl;
+    out << name_of_station.name_end_station << std::endl;
+    out << number_train << std::endl;
+    out << count_of_carriages << std::endl;
+    out << time_in_road << std::endl;
+    return out;
+}
+
+
+istream & Train::operator>>(istream & in)
+{
+    getline(in, name_of_station.name_start_station);
+    getline(in, name_of_station.name_end_station);
+    in >> time_in_road;
+    in >> number_train;
+    in >> count_of_carriages;
+    return in;
+}
+
+
+
 //ostream & operator<<(ostream & out, Train * & tr)
 //{
 //    *tr << out;

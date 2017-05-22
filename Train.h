@@ -2,6 +2,7 @@
 #define COURSE_WORK_TRAIN_H
 
 #include <string>
+#include <fstream>
 
 using namespace std;
 
@@ -26,6 +27,9 @@ public:
     //getters
     virtual int get_number_train();
     virtual int get_count_of_carriages();
+    virtual std::string get_start_station();
+    virtual std::string get_end_station();
+    virtual int get_time_in_road();
 
     //setters
     virtual void set_start_station();
@@ -35,6 +39,8 @@ public:
     virtual void set_time_in_road();
 
     virtual void show() const;  //show fields of train object
+    virtual ostream& operator<<(ostream& out);
+    virtual istream& operator>>(istream& in);  //перевантаження оперції >>, як метод класу
 
 //    friend ostream& operator<<(ostream& out, Try * & tr);
 //    friend istream& operator>>(istream& in, Try * & tr);

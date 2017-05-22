@@ -79,7 +79,7 @@ void Main_job::Run()
             case 5:
             {
                 system("clear");
-                //save_file();
+                write_to_files(w);
                 std::cout << "Press enter to continue ...";
                 std::cin.get();
                 break;
@@ -87,7 +87,7 @@ void Main_job::Run()
             case 6:
             {
                 system("clear");
-                //load_from_file();
+                read_from_files(w);
                 std::cout << "Press enter to continue ...";
                 std::cin.get();
                 break;
@@ -155,4 +155,14 @@ void Main_job::sort_objects(New_stack &s) {
 void Main_job::do_request(New_stack &s) {
     std::cout << "Request to collection: Output the number of the train with the maximum number of wagons." << std::endl;
     s.request_stack();
+}
+
+void Main_job::write_to_files(New_stack &s) {
+    std::cout << "Write to file." << std::endl;
+    s.write_to_file();
+}
+
+void Main_job::read_from_files(New_stack &s) {
+    std::cout << "Read from file." << std::endl;
+    s.read_from_file();
 }

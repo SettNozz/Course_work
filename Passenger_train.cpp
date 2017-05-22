@@ -14,8 +14,6 @@ void Passenger_train::set_count_of_carriages(){
 }
 
 Passenger_train::Passenger_train(road name_s, int num_tr, int num_car, int time, int num_pas, int num_pl) {
-//    Train(name_s, name_e, num_tr, num_car, time);
-//    Passenger_train(num_pas,num_pl);
     name_of_station.name_start_station = name_s.name_start_station;
     name_of_station.name_end_station = name_s.name_end_station;
     time_in_road = time;
@@ -60,4 +58,26 @@ void Passenger_train::set_number_of_plases() {
         std::cin >> number_of_plases;
     }
 
+}
+
+int Passenger_train::get_number_of_places() { return number_of_plases;}
+
+int Passenger_train::get_number_of_passangers() { return number_of_passangers;}
+
+
+ostream & Passenger_train::operator<<(ostream & out) // new method for saving
+{
+    out << "Passenger train" << std::endl;
+    this->Train::operator<<(out);
+    out << number_of_plases << std::endl;
+    out << number_of_passangers << std::endl;
+    return out;
+}
+
+istream & Passenger_train::operator>>(istream & in)
+{
+    this->Train::operator>>(in);
+    in >> number_of_plases;
+    in >> number_of_passangers;
+    return in;
 }

@@ -15,7 +15,8 @@ struct stack_node{
 class New_stack {
 private:
     stack_node *ptop_;
-    int len = 0;
+
+    //int len;
 public:
     New_stack();
     New_stack(const New_stack & q);
@@ -28,7 +29,7 @@ public:
     bool is_empty();
     void push( Train *& item);
     void clear_stack();
-    int len_stack();
+    int len_stack() const;
     Train* pop();
     Train* peek();
     void print_stack();
@@ -36,6 +37,7 @@ public:
     void write_to_file() const;
     void sort_stack();
     void request_stack();
+
 };
 
 
